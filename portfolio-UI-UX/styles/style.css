@@ -300,6 +300,7 @@ body {
     }
     .cabecalho__menu {
         justify-content: center;
+        
     }
     
     .apresentacao {
@@ -335,5 +336,17 @@ body {
         flex-direction: column;
         justify-content: center;
         text-align: center;
+    }
+}
+@media (max-width: 480px) {
+    .cabecalho {
+        padding: 5%;
+    }
+    .cabecalho__menu {
+        gap: 30px;
+    }
+    .cabecalho__menu__link {
+        font-size: 18px;
+       
     }
 }
