@@ -338,15 +338,3 @@ body {
         text-align: center;
     }
 }
-@media (max-width: 480px) {
-    .cabecalho {
-        padding: 5%;
-    }
-    .cabecalho__menu {
-        gap: 30px;
-    }
-    .cabecalho__menu__link {
-        font-size: 18px;
-       
-    }
-}
