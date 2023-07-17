@@ -209,6 +209,7 @@ body {
 .apresentacao__conteudo__imagem {
     
     margin-top: 2rem;
+    width: 100%;
    
 }
 .apresentacao__conteudo__imagem__HG {
@@ -294,7 +295,7 @@ body {
     padding: 22px;
 }
 
-@media (max-width: 1090px) {
+@media (min-width: 500px) and (max-width: 1090px) {
     .cabecalho {
         padding: 10%;
     }
@@ -336,5 +337,65 @@ body {
         flex-direction: column;
         justify-content: center;
         text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .cabecalho {
+        padding: 30%;
+    }
+    .cabecalho__menu {
+        justify-content: center;
+        gap: 40px;
+    }
+    .cabecalho__menu__link {
+        font-size: 20px;
+    }
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+    .apresentacao__conteudo__projetos {
+       flex-direction: column;
+        justify-content: center;
+        padding: 5% 0% 0% 5%;
+        width: 70%;
+    }
+    .apresentacao__conteudo__projeto__wireframes{
+        flex-direction: column;
+        justify-content: center;
+        padding: 5%;
+        text-align: center;
+    }
+    .apresentacao__conteudo__projeto__font {
+        flex-direction: column;
+        justify-content: center;
+        padding: 5%;
+        text-align: center;
+    }
+    .apresentacao__conteudo__projeto__cor {
+        flex-direction: column;
+        justify-content: center;
+        padding: 5%;
+        text-align: center;
+    }
+    .apresentacao__conteudo__projeto__telas {
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+    }
+    .apresentacao__conteudo__h3__direita {
+        flex-direction: column;
+        justify-content: center;
+        text-align: right;
+    }
+    .apresentacao__conteudo__paragrafo__direita {
+        flex-direction: column;
+        justify-content: center;
+        text-align: right;
     }
 }
