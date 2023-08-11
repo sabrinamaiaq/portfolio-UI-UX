@@ -224,7 +224,8 @@ body {
 .apresentacao__conteudo__imagem__deepFocus {
     margin-top: 2rem;
     border-width: 8%;
-    width: 34rem;
+   height: 40%;
+    width: 40%;
 }
 
 .apresentacao__conteudo__imagem:hover {
@@ -240,8 +241,8 @@ body {
     
 }
 .apresentacao__conteudo__imagem__deepFocus:hover {
-    height: 40%;
-    width: 40%;
+    height: 50%;
+    width: 50%;
 }
 
 .apresentacao__conteudo__subtitulo {
