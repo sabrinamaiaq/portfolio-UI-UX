@@ -67,17 +67,15 @@ body {
 
 
 .apresentacao__conteudo__titulo {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     font-family: 'Poppins', sans-serif;
-    text-align: center;
 }
+
 .apresentacao__conteudo__paragrafoh1 {
     font-size: 1.37rem;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
-    color: var(--cor-terciaria);
-    text-align: center;
-   
+    color: var(--cor-terciaria);   
     
 }
 
@@ -119,6 +117,17 @@ body {
     
 }
 
+.imagens__lado {
+    display: flex;
+    flex-direction: row;
+}
+.imagem__projeto {
+    width: 50%;
+}
+.imagem__projeto__story {
+    margin-left: 20px;
+    width: 45%;
+}
 
 .apresentacao__conteudo__projetos{
      display: flex;
@@ -126,6 +135,8 @@ body {
      flex-wrap: wrap; 
      gap: 4%;
      align-items: center;
+     justify-content: center;
+
 }
 
 .apresentacao__conteudo__projeto__wireframes {
@@ -209,41 +220,22 @@ body {
     text-decoration: none;
 }
 
+
 .apresentacao__conteudo__imagem {
     margin-top: 2rem;
-    width: 100%;
-   
-}
-.apresentacao__conteudo__imagem__HG {
-
-    margin-top: 2rem;
-    border-width: 8px;
-    height: 93%;
-    width: 93%;
-}
-.apresentacao__conteudo__imagem__deepFocus {
-    margin-top: 2rem;
-    border-width: 8%;
-   height: 40%;
-    width: 40%;
+    border-width: 2%;
+    border-radius: 8px;
+    width: 470px;
+    height: 300px;
 }
 
 .apresentacao__conteudo__imagem:hover {
-    height: 105%;
-    width: 105%;
-    
-    
-}
-.apresentacao__conteudo__imagem__HG:hover {
-    height: 105%;
-    width: 105%;
-    
+    height: 305px;
+    width: 480px;
     
 }
-.apresentacao__conteudo__imagem__deepFocus:hover {
-    height: 50%;
-    width: 50%;
-}
+
+
 
 .apresentacao__conteudo__subtitulo {
     font-size: 1.37rem;
@@ -287,33 +279,30 @@ body {
     font-weight: 600;
 }
 .apresentacao__links__navegacao__side {
-   
     justify-content: center;
     gap: 12px;
     border: 2px solid var(--cor-terciaria);
-    width: 80%;
-    padding: 20px 20px;
-    text-align: center;
+    padding: 10px 10px;
     border-radius: 8px;
     font-size: 1.25rem;
     text-decoration: none;
     color: var(--cor-secundaria);
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    margin-top: 10px;
 }
 .apresentacao__links__navegacao:hover {
     background-color: var(--cor-hover);
-    padding: 3% ;
+    padding: 2% ;
 }.apresentacao__links__navegacao__side:hover {
     background-color: var(--cor-hover);
-    padding: 3% ;
+    padding: 2% ;
 }
 .imagem__perfil:hover {
     background-color: var(--cor-hover);
     padding: 2%;
     size: 50%
 }
-
 
 
 .rodape {
@@ -352,6 +341,13 @@ body {
         padding: 5%;
         text-align: center;
     }
+    .apresentacao__conteudo__imagem__deepFocus {
+        flex-direction: column;
+        justify-content: center;
+        padding: 5%;
+        text-align: center;
+        width: 80%;
+    }
     .apresentacao__conteudo__projeto__font {
         flex-direction: column;
         justify-content: center;
@@ -373,7 +369,7 @@ body {
 
 @media (max-width: 500px) {
     .cabecalho {
-        padding: 10% 30% % 30%;
+        padding: 10% 30% 10% 30%;
     }
     .cabecalho__menu {
         justify-content: center;
@@ -396,6 +392,13 @@ body {
         padding: 5% 0% 0% 5%;
         width: 70%;
     }
+    .apresentacao__conteudo__imagem__deepFocus {
+        flex-direction: column;
+        justify-content: center;
+        padding: 5% 0% 0% 5%;
+        width: 90%;
+    }
+    
     .apresentacao__conteudo__projeto__wireframes{
         flex-direction: column;
         justify-content: center;
