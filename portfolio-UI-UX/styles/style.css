@@ -111,6 +111,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     color: var(--cor-terciaria);
+    padding: 10px;
    
     
 }
@@ -383,6 +384,7 @@ body {
     .apresentacao__conteudo__titulo {
         font-size: 24px;
         padding: 10px;
+        margin-left: 5px;
     }
     .apresentacao__conteudo__projeto__font {
         flex-direction: column;
@@ -429,5 +431,9 @@ body {
         width: 80%;
         justify-content: center;
        
+    }
+    .apresentacao__links__navegacao {
+        width: 100%;
+
     }
 }
