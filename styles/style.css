@@ -13,11 +13,22 @@
 }
 
 body {
-   
+    height: 100vh;
     box-sizing: border-box;
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
     
+}
+
+.rodape {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 0.87rem;
+    text-align: center;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    padding: 22px;
+    bottom: 0;
 }
 
 
@@ -36,14 +47,13 @@ body {
     text-decoration: none;
 }
 .cabecalho__selected {
-    color: var(--cor-secundaria);
-    font-size: 26px;
+    color: var(--cor-hover);
+    scale: 1.03;
 }
 
 .cabecalho__menu__link:hover {
     color: var(--cor-hover);
-    font-size: 26px;
-    
+    scale: 1.03;
 }
 
 
@@ -100,6 +110,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     color: var(--cor-terciaria);
+    padding: 10px;
    
     
 }
@@ -127,6 +138,16 @@ body {
 }
 .imagem__projeto {
     width: 50%;
+    border: solid;
+    border-color: var(--cor-terciaria);
+    border-radius: 5px;
+}
+.imagem__2 {
+    width: 100%;
+    margin-top: 10px;
+}
+.imagem__1{
+    height: 90%;
 }
 .imagem__projeto__story {
     margin-left: 20px;
@@ -234,9 +255,7 @@ body {
 }
 
 .apresentacao__conteudo__imagem:hover {
-    height: 305px;
-    width: 480px;
-    
+    scale: 1.02;
 }
 
 
@@ -273,7 +292,7 @@ body {
     justify-content: center;
     gap: 12px;
     border: 2px solid var(--cor-terciaria);
-    width: 30%;
+    width: 50%;
     padding: 14px 0px;
     text-align: center;
     border-radius: 8px;
@@ -305,15 +324,6 @@ body {
 
 
 
-.rodape {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 0.87rem;
-    text-align: center;
-    color: var(--cor-primaria);
-    background-color: var(--cor-terciaria);
-    padding: 22px;
-}
 
 
 @media (min-width: 300px) and (max-width: 1000px) {
@@ -348,7 +358,15 @@ body {
         width: 100%;
         height: 100%;
     }
+    .apresentacao__conteudo__imagem:hover {
+        height:100%;
+        width: 100%;
+        
+    }
 
+    .imagem__1 {
+        width: 100%;
+    }
 
     .apresentacao__conteudo__paragrafoh1 {
         text-align: left;
@@ -376,6 +394,7 @@ body {
     .apresentacao__conteudo__titulo {
         font-size: 24px;
         padding: 10px;
+        margin-left: 5px;
     }
     .apresentacao__conteudo__projeto__font {
         flex-direction: column;
@@ -422,5 +441,9 @@ body {
         width: 80%;
         justify-content: center;
        
+    }
+    .apresentacao__links__navegacao {
+        width: 100%;
+
     }
 }
